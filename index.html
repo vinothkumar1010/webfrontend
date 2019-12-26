@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>coding challenge</title>
+    <link rel="stylesheet" type="text/css" href="resources/css/site.css" >
+    <script src="resources/js/jquery.js"></script>
+    <script src="resources/js/jquery.form.js"></script>
+    <script src="resources/js/jquery.validate.min.js"></script>
+    <script src="resources/js/register.js"></script>
+    <script src="resources/js/cleave.js"></script>
+</head>
+<body>
+    <header>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 162 34">
+            <g fill="none" fill-rule="evenodd">
+                <text fill="#565656" font-family="Arial-BoldItalicMT, Arial" font-size="18" font-style="italic" font-weight="bold" transform="translate(-1)">
+                    <tspan x="49.492" y="23">My Company</tspan>
+                </text>
+                <path fill="#F5E149" stroke="#979797" d="M20 27L7.657 32.562l2.357-11.78-9.986-8.344 13.8-1.72L20 0l6.172 10.719 13.8 1.719-9.986 8.343 2.357 11.781z"
+                />
+            </g>
+        </svg>
+    </header>
+    <section id="sectionTitle">
+        <p>register</p>
+    </section>
+    <section id="formSection">
+        <p id="enterInfo">Enter your information below for exclusive offers, promotions and savings</p>
+        <form id="registerForm" name="registerForm">
+            <div>
+                <p><sup>*</sup>Fields required</p>
+                <div>
+                    <label for="firstName">
+                        First Name<sup>*</sup>
+                    </label>
+                    <input type="text" id="firstName" name="firstName" required/>
+                </div>
+                <div>
+                    <label for="lastName">
+                        Last Name
+                    </label>
+                    <input type="text" id="lastName" name="lastName" />
+                </div>
+                <div>
+                    <label for="emailAddress">
+                        Email Address<sup>*</sup>
+                    </label>
+                    <input type="email" id="emailAddress" name="emailAddress" />
+                </div>
+                <div>
+                    <label for="password">
+                        Choose Password<sup>*</sup>
+                    </label>
+                    <input type="password" id="password" name="password" />
+                </div>
+                <div>
+                    <label for="confirmPassword">
+                        Confirm Password<sup>*</sup>
+
+                    </label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" />
+                </div>
+                <div>
+                    <label for="dob" class="relative">
+                        Birthdate<sup>*</sup>
+                        <span class="birthdatePromo">?</span>
+                        <div class="birthdayTip">
+                                We'll use this to send you birthday bonus points
+                        </div>
+                    </label>
+                    <select name="dobMonth" id="dobMonth">
+                        <option value="">Month</option>
+                        <option value="01">Jan</option>
+                        <option value="02">Feb</option>
+						<option value="03">Mar</option>
+                        <option value="04">Apr</option>
+						<option value="05">May</option>
+						<option value="06">Jun</option>
+						<option value="07">Jul</option>
+						<option value="08">Aug</option>
+						<option value="09">Sep</option>
+						<option value="10">Oct</option>
+						<option value="11">Nov</option>
+						<option value="12">Dec</option>
+                    </select>
+                    <select name="dobDay"  id="dobDay">
+                        <option value="">Day</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+                        <option value="12">12</option>
+						<option value="13">13</option>
+						<option value="14">14</option>
+						<option value="15">15</option>
+						<option value="16">16</option>
+						<option value="17">17</option>
+						<option value="18">18</option>
+						<option value="19">19</option>
+						<option value="20">20</option>
+						<option value="21">21</option>
+                        <option value="22">22</option>
+						<option value="23">23</option>
+						<option value="24">24</option>
+						<option value="25">25</option>
+						<option value="26">26</option>
+						<option value="27">27</option>
+						<option value="28">28</option>
+						<option value="29">29</option>
+						<option value="30">30</option>
+                    </select>
+                    <select  name="dobYear"   id="dobYear">
+                        <option value="">Year</option>
+                        <option value="2000">2000</option>
+                        <option value="1999">1999</option>
+						 <option value="1998">1998</option>
+						 <option value="1997">1997</option>
+						 <option value="1996">1996</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="phoneNumber" class="relative">
+                        Phone Number<sup>*</sup>
+                        <a href="#" class="phoneLink">Lorem ipsum dollar</a>
+                    </label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="(XXX) XXX-XXXX" />
+                </div>
+                <div>
+                    <label for="">
+                        Country<sup>*</sup>
+
+                    </label>
+                    <input type="radio" id="US" name="country" checked value="US"/>
+                        <label for="US" class="inlineBlock">
+                                <span class="styled_radio"></span>
+                                <span class="usflag"></span>
+                        </label>
+                    <input type="radio" id="Canada" name="country" value="Can"/>
+                        <label for="Canada" class="inlineBlock">
+                            <span class="styled_radio"></span>
+                            <span class="caflag"></span>
+                        </label>
+                </div>
+                <div>
+                    <label for="zipCode">
+                        Zip/Postal code<sup>*</sup>
+
+                    </label>
+                    <input type="tel" id="zipCode" name="zipCode" />
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" id="terms" name="terms" >
+                <label for="terms" >
+                    <span class="styled_checkbox"></span>
+                    Yes, I accept the <a href="">Terms &amp; Conditions</a> and <a href="">Privacy Policy</a>
+                </label>
+            </div>
+            <div>
+                    <input type="checkbox" id="specialOffer" name="specialOffer">
+                    <label   for="specialOffer">
+                        <span class="styled_checkbox"></span>
+                        Yes, I'd like to receive news and special offers.
+                    </label>
+            </div>
+            <div class="finalSection">
+                <button type="submit">Register</button>
+            </div>
+            <div id="errordiv">
+                    <ul class="dashed">
+
+                </ul></div>
+        </form>
+        
+    </section>
+    <footer>
+            
+    </footer>
+</body>
+
+</html>
